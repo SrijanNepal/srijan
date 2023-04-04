@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <style>
+            body{
+                font-family: Helvetica;
+                background-color: rgb(206, 238, 130);
+            }
+            .container{
+                padding: 40px;
+                background-color: rgb(251, 192, 255);
+            }
+            input[type=text],input[type=password],input[type=email],textarea{
+                width: 100%;
+                padding: 10px;
+                margin: 1px 0 10px 0;
+                display:inline-block;
+                border: none;
+                background: #f1f1f1;
+            }
+            input[type=text]:focus,input[type=password]:focus{
+                background-color:orange;
+                outline:none;
+            }
+            div{
+                padding:10px 0;
+            }
+            hr{
+                border: 1px solid#f1f1f1;
+                margin-bottom: 25px;
+            }
+            .registerbtn{
+                background-color: #4caf50;
+                color:white;
+                padding:16px 20px;
+                margin: 8px 0;
+                border:none;
+                cursor:pointer;
+                width: 100%;
+                opacity:0.9;
+            }
+            .registerbtn.hover{
+                opacity: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <br>
+        <form>
+            <div class="container">
+                <center> <h1>Student Registration Form</h1></center>
+            <hr>
+            <label>FIRST NAME:</label><br>
+            <input type="text" name="FIRST NAME" placeholder="First name" size="15" required/> <br> <br>
+            <label>MIDDLE NAME:</label><br>
+            <input type="text" name="MIDDLE NAME" placeholder="Middle name" size="15"/> <br> <br>
+            <label>LAST NAME:</label><br>
+            <input type="text" name="Last NAME" placeholder="Last name"size="15"/> <br> <br>
+            <label>COURSE:</label>
+            <SELECT>
+                <option value="COURSE">COURSE</option>
+                <option value="BCA">BCA</option>
+                <option value="BBA">BBA</option>
+                <option value="B.TECH">B.TECH</option>
+                <option value="MBA">MBA</option>
+                <option value="MCA">MCA</option>
+            </SELECT>
+            <BR>
+            <BR>
+            <label>GENDER :</label><BR>
+                <input type="radio" value="male" name="gender"checked>MALE<BR>
+                <input type="radio" value="female" name="gender">FEMALE<BR>
+                <input type="radio" value="other" name="gender">OTHER<BR>
+            <label>PHONE :</label><BR>
+                <input type="text" name="country code" value="+91"size="5"/><br>
+                <input type="text" name="phone" placeholder="Phone"size="10"/><br> 
+                ADDRESS:
+                <br>
+                <textarea cols="80" rows="5" placeholder="Current Address"value="address"></textarea><br>
+                EMAIL:
+                <br>
+                <input type="email" id="email" name="email" placeholder="Email"/><br>
+                PASSWORD:
+                <br>
+                <input type="password" id="pass" name="pass" placeholder="Password"/><br>
+                RE-TYPE PASSWORD:
+                <br>
+                <input type="password" id="repass" name="repass" placeholder="Re-type Password"/><br>
+                <button type="submit" class="registerbtn">Register</button>      
+        </form>
+        </body>
+        </html>
